@@ -14,6 +14,7 @@
     color: #fff;
     transition: all 0.3s;
 }
-li{
+#sidebar li a{
    font-family: 'Oswald', sans-serif !important;
+   color: #9C528B;
 }
