@@ -18,3 +18,11 @@
    font-family: 'Oswald', sans-serif !important;
    color: #9C528B;
 }
+#head{
+  font-family: 'Oswald', sans-serif !important;
+  text-decoration: none !important;
+  color: #9C528B;
+}
+#head:hover {
+  text-decoration: none !important;
+}
