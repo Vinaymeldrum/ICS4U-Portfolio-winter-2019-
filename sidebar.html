@@ -19,34 +19,34 @@
             </li>
             <ul class="collapse list-unstyled" id="homeSubmenu">
               <li>
-                <a class="px-5 py-4" href="naturalSimulations.html">Number 1</a>
+                <a class="px-5 py-4" href="naturalSimulations.html">Natural Simulations</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 2</a>
+                <a class="px-5 lg-4 py-4" href="jQuery.html">jQuery</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 3</a>
+                <a class="px-5 lg-4 py-4" href="dom.html">Webpages interactive</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 4</a>
+                <a class="px-5 lg-4 py-4" href="drawingAndAnimation.html">Intro to JS</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 5</a>
+                <a class="px-5 lg-4 py-4" href="SQL.html">SQL</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 6</a>
+                <a class="px-5 lg-4 py-4" href="gamesAndVisualizations.html">Games and Visualizations</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 7</a>
+                <a class="px-5 lg-4 py-4" href="HTMLAndCSS.html">HTML and CSS</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 8</a>
+                <a class="px-5 lg-4 py-4" href="algorithms.html">Algorithms</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 9</a>
+                <a class="px-5 lg-4 py-4" href="githubCourses.html">Github Courses</a>
               </li>
               <li>
-                <a class="px-5 lg-4 py-4" href="#">Number 10</a>
+                <a class="px-5 lg-4 py-4" href="microbit.html">Microbit</a>
               </li>
             </ul>
             <li>
@@ -58,10 +58,10 @@
           </ul>
 
         </nav>
+
         <div id="content">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-
               <button type="button" id="sidebarCollapse" class="btn btn-info">
                 <i class="fas fa-align-left"></i>
                 <span>Toggle Sidebar</span>
@@ -70,3 +70,40 @@
           </nav>
         </div>
       </div>
+      <script>
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+            });
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+      </script>
+      <script>
+        $(document).ready(function() {
+
+          $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+          });
+
+          $('#sidebarCollapse').on('click', function() {
+            // open or close navbar
+            $('#sidebar').toggleClass('active');
+            // close dropdowns
+            $('.collapse.in').toggleClass('in');
+            // and also adjust aria-expanded attributes we use for the open/closed arrows
+            // in our CSS
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+          });
+        });
+      </script>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+      </script>
