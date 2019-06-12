@@ -22,7 +22,28 @@
         <div id="loadHeader"></div>
       </div>
     </div>
-
+    <div id="recursiveArt" class="">
+        <div class="row justify-content-center">
+          <h3 class="col pt-5"> Project 1: Recursive Art</h3>
+        </div>
+        <div class="row content-center pt-5">
+            <img src="data/recursiveArt.PNG" alt="Recursive Art">
+        </div>
+        <div class="row pt-4" style="margin-right: 100px">
+          <p class="text-left" style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+    </div>
+    <div id="selectionSorter" class="">
+        <div class="row justify-content-center">
+          <h3 class="col pt-5"> Project 2: Selection Sort Visualizer</h3>
+        </div>
+        <div class="row content-center pt-5">
+            <img src="data/selectionSorter.PNG" alt="Selction Sort Visualizer">
+        </div>
+        <div class="row pt-4" style="margin-right: 100px">
+          <p class="text-left" style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+    </div>
     <script type="text/javascript">
       $(document).ready(function() {
 
@@ -51,4 +72,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        console.log("ready");
+
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+          console.log("click");
+          // open or close navbar
+          $('#sidebar').toggleClass('active');
+          if($('#sidebar').hasClass('active')){
+            $('#buttonDiv').css("padding-left", "250px");
+          }else{
+            $('#buttonDiv').css("padding-left", "0px");
+          }
+          // close dropdowns
+          $('.collapse.in').toggleClass('in');
+          // and also adjust aria-expanded attributes we use for the open/closed arrows
+          // in our CSS
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+      });
+    </script>
 </body>
