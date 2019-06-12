@@ -94,7 +94,10 @@ a[data-toggle="collapse"] {
     #sidebar {
         margin-left: -250px;
     }
+}
+    #sidebar {
+        margin-left: -250px;
+    }
     #sidebar.active {
         margin-left: 0;
     }
-}
