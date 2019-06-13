@@ -14,7 +14,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" async></script>
   <script src="sidebar.js" async></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
 </head>
 
 <body style="background-color: #B9929F;">
@@ -72,7 +71,6 @@
               <img src="https://cdn.kastatic.org/images/avatars/svg/cs-winston.svg" id="winston">
               <img src="https://www.kasandbox.org/programming-images/avatars/leafers-seedling.png" id="leafers">
               <img src="https://cdn.kastatic.org/images/avatars/svg/starky-ultimate.svg" id="object1">
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
               <script>
                 $("#leafers").on("click", function(event) {
                   $("#leafers")
@@ -187,6 +185,43 @@
     });
   </script>
 
+    <script type="text/javascript">
+
+      var shroom = $("<p>").text("Mushroom");
+      $("#mushroom").hide();
+      $("#mushroom").slideDown();
+      shroom.appendTo("body").fadeIn(1000);
+      var crocpic = $("#croc");
+      crocpic.hide();
+      var previous = $("#prev");
+      previous.hide();
+      var next = $("#next");
+      var croctext = $("<p>").text("Crocodile");
+      $("#next").on("click", function() {
+         $("#mushroom").hide();
+         shroom.hide();
+         croctext.fadeIn();
+         crocpic.fadeIn();
+         crocpic.animate({
+              width: "450px"
+          });
+          croctext.appendTo("body").animate({
+             fontSize: "3em"
+          });
+          $(this).hide();
+          previous.show();
+      });
+          $("#prev").on("click", function() {
+          crocpic.css("width", "400px");
+          $("#mushroom").fadeIn();
+          shroom.fadeIn();
+          next.show();
+          croctext.hide();
+          crocpic.hide();
+          previous.hide();
+
+      });
+    </script>
 
 </body>
 
