@@ -185,43 +185,6 @@
     });
   </script>
 
-    <script type="text/javascript">
-
-      var shroom = $("<p>").text("Mushroom");
-      $("#mushroom").hide();
-      $("#mushroom").slideDown();
-      shroom.appendTo("body").fadeIn(1000);
-      var crocpic = $("#croc");
-      crocpic.hide();
-      var previous = $("#prev");
-      previous.hide();
-      var next = $("#next");
-      var croctext = $("<p>").text("Crocodile");
-      $("#next").on("click", function() {
-         $("#mushroom").hide();
-         shroom.hide();
-         croctext.fadeIn();
-         crocpic.fadeIn();
-         crocpic.animate({
-              width: "450px"
-          });
-          croctext.appendTo("body").animate({
-             fontSize: "3em"
-          });
-          $(this).hide();
-          previous.show();
-      });
-          $("#prev").on("click", function() {
-          crocpic.css("width", "400px");
-          $("#mushroom").fadeIn();
-          shroom.fadeIn();
-          next.show();
-          croctext.hide();
-          crocpic.hide();
-          previous.hide();
-
-      });
-    </script>
 
 </body>
 

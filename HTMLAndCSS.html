@@ -11,8 +11,31 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
   <script src="sidebar.js" async></script>
-
-
+  <style>
+         #recipie p{
+             color:red;
+         }
+        #recipie h1{
+             color:pink;
+         }
+        #recipie .Car{
+             color: blue;
+         }
+          #blog h1{
+              color: purple;
+              font-size: 12px;
+          }
+          #blog h3{
+              color: pink;
+              text-decoration: underline;
+              font-style: italic;
+          }
+        #blog   p{
+              font-family: sans-serif;
+              font-weight: bold;
+              font-size: 10px;
+          }
+          </style>
 </head>
 
 <body style="background-color: #B9929F;">
@@ -22,7 +45,130 @@
         <div id="loadHeader"></div>
       </div>
     </div>
+    <div id="recipie">
+      <div class="row justify-content-center">
+        <h3 class="col pt-5">Recipie Book</h3>
+      </div>
+      <div class="row content-center pt-5">
+        <h1>Vinay's Recipe Book</h1>
 
+                <h2>Contents:</h2>
+
+                <ol>
+                    <li><a href="#choco">Recipe #1</a></li>
+
+                    <li><a href = "#meow"> Recipe #2</a></li>
+
+                    <li><a href = "#cat"> Recipe #2</a></li>
+           </ol>
+
+                <h2 id="#choco">Recipe #1</h2>
+
+                <ul>
+                    <li class = "Car">Time: 5 minutes depends on turtle</li>
+                    <li>Serves: 1 turtle</li>
+                </ul>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <p><strong>Step 1:</strong> Pick up the turtle.
+        </p>
+            <p><strong>Step 2:</strong> Move the turtle to the other side of the road
+            </p>
+
+
+
+                <h2 id="meow">Recipe #2</h2>
+
+                <ul>
+                    <li>Time: 5-10 minutes depends on turtle</li>
+                    <li>Serves: 1 turtle</li>
+                </ul>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <p><strong>Step 1:</strong> Pick up the turtles.
+        </p>
+            <p><strong>Step 2:</strong> Move the turtles to the other side of the road.
+            </p>
+
+                <h2 id="cat">Recipe #3</h2>
+
+                <ul>
+                    <li>Time: 10-15 minutes depends on turtles</li>
+                    <li>Serves: 1 turtle</li>
+                </ul>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <p><strong>Step 1:</strong> Pick up the turtles.
+        </p>
+            <p><strong>Step 2:</strong> Move the turtles to the other side of the road.
+            </p>
+            <p><em>Source: <a href="https://www.nps.gov/bisc/learn/nature/how-you-can-help-protect-sea-turtles.htm">Some recipes websites</a></em></p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Blog</h3>
+    </div>
+    <div id="blog">
+      <div class="row content-center pt-5">
+        <h1>Cat's blog</h1>
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#first">First post!</a></li>
+                    <li><a href = "#2nd post"> 2nd post</a></li>
+                </ul>
+
+                <h2 id = "first">First post</h2>
+                <h6>There was food on the counter, I jumped up and ate it.</h6>
+                <h4 id = "2nd">2nd post</h4>
+                <p>Something excited happened. I followed a laser pointer, that made me happy.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Birthday Party!</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <img src="data/birthdayParty.PNG" alt="">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Travel Webpage</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <img src="data/travelWebpage.PNG" alt="">
+      </div>
+    </div>
     <script type="text/javascript">
       $(document).ready(function() {
 

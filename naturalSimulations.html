@@ -22,58 +22,87 @@
         <div id="loadHeader"></div>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Paint Splatter</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-paint-splatter/5376396570492928/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Computational Creatures</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-computational-creatures/6481661198958592/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Creature Comforts and Critter Jitters</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-creature-comforts-and-critter-jitters/6360770980446208/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Asteroids Spaceship</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-asteroids-spaceship/4508143747432448/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Curling, crawling, circling creatures</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-curling-crawling-circling-creatures/4934696658632704/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <h3 class="col pt-5">Creature Colonies</h3>
+    </div>
+    <div id="bday">
+      <div class="row content-center pt-5">
+        <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-creature-colonies/6459790757298176/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <script>
+    $(document).ready(function() {
+      console.log("ready");
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
-
-        $('#sidebarCollapse').on('click', function() {
-          // open or close navbar
-          $('#sidebar').toggleClass('active');
-          // close dropdowns
-          $('.collapse.in').toggleClass('in');
-          // and also adjust aria-expanded attributes we use for the open/closed arrows
-          // in our CSS
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
       });
-    </script>
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        console.log("ready");
-
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
-
-        $('#sidebarCollapse').on('click', function() {
-          console.log("click");
-          // open or close navbar
-          $('#sidebar').toggleClass('active');
-          if($('#sidebar').hasClass('active')){
-            $('#buttonDiv').css("padding-left", "250px");
-          }else{
-            $('#buttonDiv').css("padding-left", "0px");
-          }
-          // close dropdowns
-          $('.collapse.in').toggleClass('in');
-          // and also adjust aria-expanded attributes we use for the open/closed arrows
-          // in our CSS
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
+      $('#sidebarCollapse').on('click', function() {
+        console.log("click");
+        // open or close navbar
+        $('#sidebar').toggleClass('active');
+        if($('#sidebar').hasClass('active')){
+          $('#buttonDiv').css("padding-left", "250px");
+        }else{
+          $('#buttonDiv').css("padding-left", "0px");
+        }
+        // close dropdowns
+        $('.collapse.in').toggleClass('in');
+        // and also adjust aria-expanded attributes we use for the open/closed arrows
+        // in our CSS
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
       });
-    </script>
+    });
+  </script>
 </body>
