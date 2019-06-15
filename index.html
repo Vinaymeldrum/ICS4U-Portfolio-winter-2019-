@@ -10,180 +10,57 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" async></script>
   <script src="sidebar.js" async></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 </head>
 
 <body style="background-color: #B9929F;">
-    <div class="row">
-      <div class="col-lg-3 col-md-5 col-sm-5 pr-5">
-        <div id="loadHeader"></div>
-      </div>
-      <div class="col px-5">
-        <div id="title" class="row content-center" style="margin-top: 10px;">
-          <h1 class="px-4"> My Portfolio</h1>
-        </div>
-        <div id="number1">
-          <div class="row justify-content-center">
-            <h3 class="col pt-5"> Number 1: </h3>
-          </div>
-          <div class="row content-center pt-5">
-
-            <html>
-
-            <head>
-              <meta charset="utf-8">
-              <title>Project: Scene change</title>
-              <style>
-                #object1{
-              position: absolute;
-              left: 30px;
-              width: 40px;
-              top: 450px; // 100
-          }
-          #leafers {
-              position: absolute;
-              top: 210px;
-              left: 378px;
-          }
-          .crocodile{
-              background-color: red;
-              position: absolute;
-              top: 250px; // 100
-              left: 300px;
-          }
-          #winston{
-              position: absolute;
-              width: 50px;
-              top: 450px; // 10
-              left: 30px;
-          }
-          #move{
-              top: 490px; // 50
-          }
-          </style>
-            </head>
-
-            <body>
-              <img src="https://www.kasandbox.org/programming-images/landscapes/beach-with-palm-trees.png">
-              <img src="https://cdn.kastatic.org/images/avatars/svg/cs-winston.svg" id="winston">
-              <img src="https://www.kasandbox.org/programming-images/avatars/leafers-seedling.png" id="leafers">
-              <img src="https://cdn.kastatic.org/images/avatars/svg/starky-ultimate.svg" id="object1">
-              <script>
-                $("#leafers").on("click", function(event) {
-                  $("#leafers")
-                    .attr({
-                      src: "https://cdn.kastatic.org/images/avatars/svg/cs-winston-baby.svg",
-                      width: "100px"
-                    })
-                    .addClass("leafy");
-                });
-                $("#object1").on("click", function(event) {
-                  $("#object1")
-                    .attr({
-                      src: "https://cdn.kastatic.org/images/avatars/svg/cs-winston.svg",
-                      width: "100px"
-                    })
-                    .addClass("object");
-                });
-                $("#winston").on("click", function(event) {
-                  $("#winston")
-                    .addClass("#move")
-                    .css({
-                      top: 200,
-                      left: 200,
-                      position: 'absolute'
-                    });
-                });
-              </script>
-            </body>
-
-            </html>
-          </div>
-          <div class="row pt-4" style="margin-right: 100px">
-            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-
-        <div id="number3" class="">
-          <div class="row justify-content-center">
-            <h3 class="col pt-5"> Number 2: </h3>
-          </div>
-          <div class="row content-center pt-5">
-            <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-computational-creatures/6481661198958592/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
-          </div>
-          <div class="row pt-4" style="margin-right: 100px">
-            <p class="text-left" style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-        <div id="number4" class="">
-          <div class="row justify-content-center">
-            <h3 class="col pt-5"> Number 2: </h3>
-          </div>
-          <div class="row content-center pt-5">
-            <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-design-a-store-database/6033488325017600/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
-            <div class="row pt-4" style="margin-right: 100px">
-              <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-            </div>
-          </div>
-        </div>
-        <div id="number5" class="">
-
-        </div>
-        <div id="number6" class="">
-
-        </div>
-        <div id="number7" class="">
-
-        </div>
-        <div id="number8" class="">
-
-        </div>
-        <div id="number9" class="">
-
-        </div>
-        <div id="number10" class="">
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-5 col-sm-5 pr-5">
+      <div id="loadHeader"></div>
     </div>
-  </div>
-  </div>
-  <!-- jQuery CDN - Slim version (=without AJAX) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <!-- Popper.JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <!-- jQuery Custom Scroller CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
-  </script>
-  <script>
-    $(document).ready(function() {
-      console.log("ready");
+    <div class="col px-5">
+      <div id="title" class="row content-center" style="margin-top: 10px;">
+        <h1 class="px-4"> My Portfolio</h1>
+      </div>
 
-      $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-      });
+        </div>
+      </div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <!-- jQuery Custom Scroller CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+      </script>
+      <script>
+        $(document).ready(function() {
+          console.log("ready");
 
-      $('#sidebarCollapse').on('click', function() {
-        console.log("click");
-        // open or close navbar
-        $('#sidebar').toggleClass('active');
-        if($('#sidebar').hasClass('active')){
-          $('#buttonDiv').css("padding-left", "250px");
-        }else{
-          $('#buttonDiv').css("padding-left", "0px");
-        }
-        // close dropdowns
-        $('.collapse.in').toggleClass('in');
-        // and also adjust aria-expanded attributes we use for the open/closed arrows
-        // in our CSS
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-    });
-  </script>
+          $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+          });
+
+          $('#sidebarCollapse').on('click', function() {
+            console.log("click");
+            // open or close navbar
+            $('#sidebar').toggleClass('active');
+            if($('#sidebar').hasClass('active')){
+              $('#buttonDiv').css("padding-left", "250px");
+            }else{
+              $('#buttonDiv').css("padding-left", "0px");
+            }
+            // close dropdowns
+            $('.collapse.in').toggleClass('in');
+            // and also adjust aria-expanded attributes we use for the open/closed arrows
+            // in our CSS
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+          });
+        });
+      </script>
 
 
 </body>
