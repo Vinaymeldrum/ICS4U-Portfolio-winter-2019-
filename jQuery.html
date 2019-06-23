@@ -10,48 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <script src="sidebar.js" async></script>
-  <style>
-    #object1{
-  position: absolute;
-  left: 300px;
-  width: 40px;
-  top: 450px; // 100
-}
-#leafers {
-  position: absolute;
-  top: 310px;
-  left: 378px;
-}
-.crocodile{
-  background-color: red;
-  position: absolute;
-  top: 250px; // 100
-  left: 400px;
-}
-#winston{
-  position: absolute;
-  width: 50px;
-  top: 450px; // 10
-  left: 30px;
-}
-#move{
-  top: 590px; // 50
-}
-      #wordGame body {
-                font-family: Arial, sans-serif;
-            }
-            form {
-                font-size: 1.5em;
-            }
-            .scrambled, input, button {
-                font-family: monospace;
-                font-size: 2em;
-            }
-            .welcome{
-                color: red;
-            }
-</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
 </head>
 
@@ -71,10 +30,7 @@
       </div>
       <div id="sceneChange">
         <div class="row content-center pt-5">
-          <img src="https://www.kasandbox.org/programming-images/landscapes/beach-with-palm-trees.png">
-          <img src="https://cdn.kastatic.org/images/avatars/svg/cs-winston.svg" id="winston">
-          <img src="https://www.kasandbox.org/programming-images/avatars/leafers-seedling.png" id="leafers">
-          <img src="https://cdn.kastatic.org/images/avatars/svg/starky-ultimate.svg" id="object1">
+          <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-scene-change/6619808466370560/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
         </div>
     </div>
     <div id="selectionSorter" class="">
@@ -83,10 +39,7 @@
         </div>
         <div class="row content-center pt-5" id = "interactiveSlideshow">
           <br>
-            <img src="https://www.kasandbox.org/programming-images/food/mushroom.png" height="200" width="200" alt="Mushrooms" id="mushroom">
-            <img src = "https://upload.wikimedia.org/wikipedia/commons/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg" height="200" width = "200" alt = "Crocodile" id= "croc">
-            <button id = "next" type="button">Next ➡</button>
-            <button id = "prev" type = "button">Previous</button>
+            <script src="https://www.khanacademy.org/computer-programming/project-interactive-slideshow/5457899578884096/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
         </div>
     </div>
     <div id="selectionSorter" class="">
@@ -94,35 +47,10 @@
           <h3 class="col pt-5"> Word Game</h3>
         </div>
         <div class="row content-center pt-5" id = "wordGame">
-          <h1>Word game!</h1>
-            <form id="joke-form">
-              <label>
-                  Unscramble these letters to form a word:<Br>
-                    <span class="scrambled">REYJUQ</span>
-                    <br>
-                    <input type="text" size="10">
-                  </label>
-                  <button type="submit">Check</button>
-                </form>
+              <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-word-game/6219714185297920/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
         </div>
     </div>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
-        $('#sidebarCollapse').on('click', function() {
-          // open or close navbar
-          $('#sidebar').toggleClass('active');
-          // close dropdowns
-          $('.collapse.in').toggleClass('in');
-          // and also adjust aria-expanded attributes we use for the open/closed arrows
-          // in our CSS
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-      });
-    </script>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -133,118 +61,5 @@
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script>
-      $(document).ready(function() {
-        console.log("ready");
-
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
-
-        $('#sidebarCollapse').on('click', function() {
-          console.log("click");
-          // open or close navbar
-          $('#sidebar').toggleClass('active');
-          if($('#sidebar').hasClass('active')){
-            $('#buttonDiv').css("padding-left", "250px");
-          }else{
-            $('#buttonDiv').css("padding-left", "0px");
-          }
-          // close dropdowns
-          $('.collapse.in').toggleClass('in');
-          // and also adjust aria-expanded attributes we use for the open/closed arrows
-          // in our CSS
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-      });
-    </script>
-    <script>
-            var answer = "JQUERY";
-            // when the user submits the form,
-            $("#joke-form").on("submit", function(event) {
-           event.preventDefault();
-           var input = $(this).find("[type=text]").val();
-           var response = $("<p>")
-                .text("test")
-                .addClass("welcome")
-                .appendTo("body");
-            console.log(response);
-            console.log(input);
-            if(answer === input){
-                response.text("you got it right!");
-            }else{
-                response.text("you got it wrong.");
-
-            }
-            });
-
-            //   check that their answer is correct
-            //   and show them appropriate message
-        </script>
-    <script>
-      $("#leafers").on("click", function(event) {
-        $("#leafers")
-          .attr({
-            src: "https://cdn.kastatic.org/images/avatars/svg/cs-winston-baby.svg",
-            width: "100px"
-          })
-          .addClass("leafy");
-      });
-      $("#object1").on("click", function(event) {
-        $("#object1")
-          .attr({
-            src: "https://cdn.kastatic.org/images/avatars/svg/cs-winston.svg",
-            width: "100px"
-          })
-          .addClass("object");
-      });
-      $("#winston").on("click", function(event) {
-        $("#winston")
-          .addClass("#move")
-          .css({
-            top: 300,
-            left: 200,
-            position: 'absolute'
-          });
-      });
-    </script>
-    <script>
-      var shroom = $("<p>").text("Mushroom");
-      $("#mushroom").hide();
-      $("#mushroom").slideDown();
-      shroom.appendTo("body").fadeIn(1000);
-      var crocpic = $("#croc");
-      crocpic.hide();
-      var previous = $("#prev");
-      previous.hide();
-      var next = $("#next");
-      var croctext = $("<p>").text("Crocodile");
-      $("#next").on("click", function() {
-         $("#mushroom").hide();
-         shroom.hide();
-         croctext.fadeIn();
-         crocpic.fadeIn();
-         crocpic.animate({
-              width: "450px"
-          });
-          croctext.appendTo("body").animate({
-             fontSize: "3em"
-          });
-          $(this).hide();
-          previous.show();
-      });
-          $("#prev").on("click", function() {
-          crocpic.css("width", "400px");
-          $("#mushroom").fadeIn();
-          shroom.fadeIn();
-          next.show();
-          croctext.hide();
-          crocpic.hide();
-          previous.hide();
-
-      });
-
-</script>
-
-
+        <script src="sidebar.js" async></script>
 </body>
