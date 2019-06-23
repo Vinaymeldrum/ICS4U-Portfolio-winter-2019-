@@ -6,7 +6,7 @@ function load(url, element) {
 }
 
 load("sidebar.html", document.getElementById("loadHeader"));
-  $(document).ready(function() {
+$(document).ready(function() {
   console.log("ready");
 
   $("#sidebar").mCustomScrollbar({

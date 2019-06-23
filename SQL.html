@@ -21,9 +21,12 @@
         <div id="loadHeader"></div>
       </div>
     </div>
-    <div class="row pt-4" style="margin-right: 100px">
-      <p class="text-left" style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+<div class="row pt-4" style="margin-right: 100px">
+  <p class="text-left" style="color: black"> The SQL module showed me that querying and managing data is an aspect of computer science. Data storage is very important in big websites or programs and this module taught me the basics on how to store
+    the data and retrieve information using SQL. In this module, I learnt how to use SQL, to sort information, retrieve data from multiple tables based on a common key, counts and ranges. SQL is a very powerful way of gaining insight into data. An
+    example, is the project “Design a Store Database” where I had a table of all the different items and was able to get the average of all the prices.
+  </p>
+</div>
     <div class="row justify-content-center">
       <h3 class="col pt-5">Design a Store Database</h3>
     </div>
@@ -56,31 +59,6 @@
         <script src="https://www.khanacademy.org/computer-programming/spin-off-of-project-app-impersonator/6620755754123264/embed.js?editor=yes&buttons=yes&author=yes&embed=yes"></script>
       </div>
     </div>
-    <script>
-      $(document).ready(function() {
-        console.log("ready");
-
-        $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-        });
-
-        $('#sidebarCollapse').on('click', function() {
-          console.log("click");
-          // open or close navbar
-          $('#sidebar').toggleClass('active');
-          if($('#sidebar').hasClass('active')){
-            $('#buttonDiv').css("padding-left", "250px");
-          }else{
-            $('#buttonDiv').css("padding-left", "0px");
-          }
-          // close dropdowns
-          $('.collapse.in').toggleClass('in');
-          // and also adjust aria-expanded attributes we use for the open/closed arrows
-          // in our CSS
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-      });
-    </script>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
